@@ -1,0 +1,164 @@
+.main {
+  font-family: "Poppins",Georgia, 'Times New Roman', Times, serif;
+  margin: 40px 40px 0px 40px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* align-items: center; */
+}
+span{
+  color: rgb(82, 31, 31);
+}
+.left {
+  flex: 1;
+}
+.right{
+  flex: 1;
+  /* margin: 0 10% 0 10%; */
+  
+}
+.card-container {
+  display: flex;
+  flex-direction: column; 
+  /* text-align: center; */
+}
+.card{
+  /* display: block; */
+  width: 100%;
+}
+
+.tile-image{
+  display: inline;
+    border: 1px solid  rgb(82, 31, 31);
+    border-radius: 5px;
+    object-fit: cover;
+  /* width: 45%; */
+}
+.card-title{
+  margin: 0px;
+  color: rgb(82, 31, 31);
+}
+
+.card-text{
+  width: 100%
+  /* text-align: center; */
+}
+
+footer {
+  /* display: block; */
+  text-align: right;
+  color: rgb(162, 117, 3);
+}
+
+@media (max-width:480px) {
+  .main {
+    margin: 20px 20px 0px 20px;
+  }
+  .logo{
+    width: 25%;
+  }
+  .tile-image{
+    /* margin-bottom: 5px; */
+    height: 200px;
+    width: 100%;
+    
+  }
+  .card-container{
+    gap: 20px;
+   }
+   
+   .headline {
+     font-size: 2em;
+     margin-bottom: 30px;
+     text-align: center;
+   }
+}
+
+@media (min-width:481px) and (max-width:1200px) {
+  .logo{
+    width: 20%;
+  }
+  .card-container {
+    flex-direction: row;  
+    gap: 20px;  
+  }
+  
+  .tile-image{
+    float: none;
+    margin-bottom: 5px;
+    height: 150px;
+    width: 100%;
+  }
+  .left{
+    padding-right: 0px;
+   }
+   
+   .headline {
+     font-size: 3em;
+     margin-bottom: 30px;
+   }
+  
+  
+}
+
+@media (min-width:1201px) and (max-width:1600px) {
+  body {
+    margin: 55px 55px 0px 55px;
+  }
+  .logo{
+    width: 7%;
+  }
+  
+  .card-container {
+    flex-direction: row; 
+    gap: 20px;   
+  }
+  
+  .tile-image{
+    float: left;
+    margin-right: 30px;
+    height: 250px;
+    width: 50%;
+  }
+  .left{
+    padding-right: 0px;
+   }
+   
+   .headline {
+     font-size: 4em;
+     margin-bottom: 30px;
+   }
+  
+  
+}
+
+@media (min-width:1601px) {
+.logo{
+  width: 7%;
+}
+.main{
+  margin: 100px 150px 0 150px;
+}
+.card-container {
+  flex-direction: row;
+  gap: 30px;
+  
+}
+
+.tile-image{
+  float: left;
+  margin-right: 25px;
+  height: 200px;
+}
+.left{
+  /* float: left; */
+ padding-right: 0px;
+}
+
+.headline {
+  font-size: 5em;
+  /* margin-bottom: 70px; */
+}
+
+}
